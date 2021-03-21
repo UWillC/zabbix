@@ -1,2 +1,2 @@
 # zabbix
-Zabbix how to and templates
+Zabbix monitoring solution how to and some templates.
