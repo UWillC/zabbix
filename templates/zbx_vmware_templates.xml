@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2021-03-22T20:32:52Z</date>
+    <date>2021-03-22T20:55:25Z</date>
     <groups>
         <group>
             <name>Hypervisors</name>
@@ -3459,7 +3459,7 @@
                     <type>3</type>
                     <snmp_community/>
                     <snmp_oid/>
-                    <key>vmware.hv.datacenter.name[{$VMWARE.URL},{HOST.HOST}]</key>
+                    <key>vmware.hv.datacenter.name[{$URL},{HOST.HOST}]</key>
                     <delay>1h</delay>
                     <history>7d</history>
                     <trends>0</trends>
