@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2021-03-22T20:25:19Z</date>
+    <date>2021-03-22T20:32:52Z</date>
     <groups>
         <group>
             <name>Hypervisors</name>
@@ -413,12 +413,7 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing>
-                                <step>
-                                    <type>1</type>
-                                    <params>0.01</params>
-                                </step>
-                            </preprocessing>
+                            <preprocessing/>
                             <jmx_endpoint/>
                             <timeout>3s</timeout>
                             <url/>
