@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2021-03-21T23:58:56Z</date>
+    <date>2021-03-22T20:25:19Z</date>
     <groups>
         <group>
             <name>Hypervisors</name>
@@ -376,7 +376,7 @@
                             <history>90d</history>
                             <trends>365d</trends>
                             <status>0</status>
-                            <value_type>3</value_type>
+                            <value_type>0</value_type>
                             <allowed_hosts/>
                             <units>s</units>
                             <snmpv3_contextname/>
@@ -413,7 +413,12 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
-                            <preprocessing/>
+                            <preprocessing>
+                                <step>
+                                    <type>1</type>
+                                    <params>0.01</params>
+                                </step>
+                            </preprocessing>
                             <jmx_endpoint/>
                             <timeout>3s</timeout>
                             <url/>
@@ -506,7 +511,7 @@
                             <history>7d</history>
                             <trends>365d</trends>
                             <status>0</status>
-                            <value_type>0</value_type>
+                            <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>B</units>
                             <snmpv3_contextname/>
