@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.0</version>
-    <date>2021-03-21T22:48:25Z</date>
+    <date>2021-03-21T23:58:56Z</date>
     <groups>
         <group>
             <name>Hypervisors</name>
@@ -3202,7 +3202,24 @@
                             <master_item/>
                         </item_prototype>
                     </item_prototypes>
-                    <trigger_prototypes/>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{Template Virt VMware Guest:vmware.vm.vfs.fs.size[{$URL},{HOST.HOST},{#FSNAME},pfree].max(15m)}&lt;5</expression>
+                            <recovery_mode>0</recovery_mode>
+                            <recovery_expression/>
+                            <name>Free space is less than 5% on filesystem &quot;{#FSNAME}&quot;</name>
+                            <correlation_mode>0</correlation_mode>
+                            <correlation_tag/>
+                            <url/>
+                            <status>0</status>
+                            <priority>4</priority>
+                            <description/>
+                            <type>0</type>
+                            <manual_close>0</manual_close>
+                            <dependencies/>
+                            <tags/>
+                        </trigger_prototype>
+                    </trigger_prototypes>
                     <graph_prototypes/>
                     <host_prototypes/>
                     <jmx_endpoint/>
